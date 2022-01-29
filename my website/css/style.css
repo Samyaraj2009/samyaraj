@@ -1,0 +1,353 @@
+body {
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #f4f4f4;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+ 
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+ 
+ float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition:  .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 20px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+body{
+  background-color: white;
+}
+main .image img{
+  border-radius: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+main .first{
+  text-align: center;
+  
+}
+
+
+.header li:hover{
+  font-weight: bolder;
+  color: rgb(61, 4, 99);
+}
+main .second{
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 80%;
+}
+main .second h1{
+  color: rgb(101, 18, 168);
+border-radius: 3px;
+}
+main .third{
+  margin-left: 10px;
+  margin-top: 100px;
+  padding: 23px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 80%;
+}
+main .third h1{
+  color: rgb(101, 18, 168);
+}
+body {
+  background:linear-gradient(to right, #820b86 0%, #b951ce 50%, #5c34ec 99%);
+}
+main .fourth{
+  margin-left: 10px;
+  margin-top: 100px;
+  padding: 23px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 80%;
+}
+main .fourth h1{
+  color: rgb(101, 18, 168);
+  
+}
+main .fourth button{
+  background-color: rgb(101, 18, 168);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+main .fourth button:hover{
+  background-color: rgb(123, 14, 212);
+  color: rgb(255, 253, 253);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+main .fifth button{
+  background-color: rgb(101, 18, 168);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+main .fifth button:hover{
+  background-color: rgb(123, 14, 212);
+  color: rgb(255, 253, 253);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+main .fifth{
+  margin-left: 10px;
+  margin-top: 100px;
+  padding: 23px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 80%;
+}
+main .fifth h1{
+  color:rgb(123, 14, 212) ;
+}
+main .sixth{
+  margin-left: 10px;
+  margin-top: 100px;
+  padding: 23px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 80%;
+}
+
+main .footer{
+  background-color: white;
+  height: 60px;
+  text-align: center;
+margin-top: 30px;
+}
+main .books img{
+   border-radius: 5px ;
+}
+main .seventh{
+  margin-left: 10px;
+  margin-top: 100px;
+  padding: 23px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 80%;
+}
+main .seventh h1{
+  color: rgb(101, 18, 168);
+  
+}
+main .seventh button{
+  background-color: rgb(101, 18, 168);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+main .seventh button:hover{
+  background-color: rgb(123, 14, 212);
+  color: rgb(255, 253, 253);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+main .eight{
+  margin-left: 10px;
+  margin-top: 100px;
+  padding: 23px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 80%;
+}
+main .eight h1{
+  color: rgb(101, 18, 168);
+  
+}
+main .eight button{
+  background-color: rgb(101, 18, 168);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+main .eight button:hover{
+  background-color: rgb(123, 14, 212);
+  color: rgb(255, 253, 253);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: center;
+}
+main{
+  min-height: calc(100vh - 60px - 60px);
+}
